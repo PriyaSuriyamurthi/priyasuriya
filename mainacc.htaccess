@@ -1,5 +1,4 @@
 //Caching schema
-<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|mp3|mp4)$">
-Header set Cache-Control "public, max-age=600"
+<FilesMatch "\.(http://priyasuriyamurthi.github.io/images/Priya-200_x2.png)$">
+Header set Cache-Control "max-age=600"
 </FilesMatch>
- 
