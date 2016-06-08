@@ -1,0 +1,135 @@
+body{
+
+    background-image:url("../images_src/backgrnd.png");
+    max-width:100%;
+}
+.textfont {
+     font-family: 'Cookie', cursive;
+     color:#bd7635;  
+     font-size:25px;
+}
+hr{
+     border: 2px solid #A86830;
+}
+.logo img{   
+     width:30%;
+     height:30%;
+     border-radius: 100px;
+     box-shadow:0 0 30px rgb(150, 75, 23);  
+}
+.context{
+    color:#463231;
+    font-size:30px;
+}
+.imgshadow img{
+     border-radius: 30px/10px;
+     box-shadow:0px 1px 2px 3px rgb(150, 75, 23);
+     padding:10px;
+}
+.imghover img:hover{
+    box-shadow:0 0 30px rgb(150, 75, 23);  
+}
+footer
+{
+    text-align:center;
+    font-size:0.8em;
+    max-width:100%;
+}
+.contact > a > .fa 
+{
+    color: #7d3017;
+    padding-left: 30px;
+}
+.navbar-default{
+    background-color: #592314;
+    border-color:#151414;
+}
+#output{
+    color:white;
+    align-content: center;
+    display:block;
+}
+.navbar-default .navbar-nav>li>a{
+    color:#f8d9a9;
+    font-family:cursive;
+}
+.navbar-default .navbar-nav>li>a:hover { 
+    background-color:#a94442;
+    color: #fff !important; 
+}
+/** Media Queries**/
+/** Max-width:990px and min-width: 734px**/
+@media (max-width:990px) and (min-width:734px){
+    .headlogo{
+        display:flex;
+    }
+    .context{
+        font-size:30px;
+    }
+    .textfont h1,h2,h3,h4{
+        font-size:30px;
+    }
+    .logo img{
+        width:50%;
+        height:50%;
+    }
+    .logo{
+        padding-right:20%;
+    }
+    .imghover{
+        display:flex;
+    }
+
+}
+@media (max-width:733px) and (min-width:401px){
+    .headlogo{
+        display:flex;
+    }
+    .context{
+        font-size:20px;
+    }
+    footer .fa{
+        font-size:1.6em;
+    }
+    .textfont h1,h2,h3,h4{
+        font-size:20px;
+    }
+    .logo img{
+        width:60%;
+        height:60%;
+    }
+    .logo{
+        padding-right:32%;
+    }
+    .imghover{
+        display:flex;
+    }
+
+}
+@media (max-width:400px){
+
+    .context{
+        font-size:70%;
+    }
+    footer .fa{
+        font-size:1.8em;
+    }
+    .textfont h1,h2,h3,h4{
+        font-size:25px;
+    }
+    .logo img{
+        width:40%;
+        height:40%;
+    }
+    .modal{
+        height:100%;
+    }
+
+}
+/** Modal **/
+.modal{
+    max-width: 100%;
+}
+.modal-body>ul{
+    font-size: 25px;
+}
