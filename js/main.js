@@ -1,5 +1,4 @@
 $(document).ready(function(){
-$('#home').addClass('selected');
 function setActiveTab(selectedTab){
    // Remove active class from all the tabs
   $('#tabhome').removeClass('selected');
