@@ -1,4 +1,0 @@
-//Caching schema
-<FilesMatch "\.(http://priyasuriyamurthi.github.io/images/Priya-200_x2.png)$">
-Header set Cache-Control "max-age=600"
-</FilesMatch>
