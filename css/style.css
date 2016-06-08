@@ -1,172 +1,196 @@
 /** CSS details for body**/
-body{
 
-    background-image:url("../images_src/backgrnd.png");
-    max-width:100%;
+body {
+    background-image: url("../images_src/backgrnd.png");
+    max-width: 100%;
+}
+/** Setting the width of the images **/
+body img{
+    width:100%;
 }
 /** font for all the headings and modal context present in the page**/
-.textfont h1,h2,h3,h4,.modal{
-     font-family: 'Cookie', cursive;
-     color:#bd7635;
-     font-size:25px;
+
+h1,
+h2,
+h3,
+h4,
+.modal {
+    font-family: 'Cookie', cursive;
+    color: #bd7635;
+    font-size: 25px;
 }
 /** style for the horitonal line**/
-hr{
-     border: 2px solid #A86830;
+
+hr {
+    border: 2px solid #A86830;
 }
 /** Shadow effect for profile picture**/
-.profilepic img{
-     width:30%;
-     height:30%;
-     border-radius: 100px;
-     box-shadow:0 0 30px rgb(150, 75, 23);
+
+.profilepic img {
+    width: 30%;
+    height: 30%;
+    border-radius: 100px;
+    box-shadow: 0 0 30px #964b17;
 }
 /** aligning and altering the syle for the context present in the page**/
-.context{
+
+.context {
     font-family: 'Cookie', cursive;
-    color:#463231;
+    color: #463231;
     text-align: justify;
-    display:none;
-    font-size:30px;
+    display: none;
+    font-size: 30px;
 }
-/** Shawdow effect for all the pictures**/
-.imgshadow img{
-     border-radius: 30px/10px;
-     box-shadow:0px 1px 2px 3px rgb(150, 75, 23);
-     padding:10px;
+/** Shadow effect for all the pictures**/
+
+.imgshadow img {
+
+    border-radius: 30px/10px;
+    box-shadow: 0px 1px 2px 3px #964b17;
+    padding: 10px;
 }
 /** Hover effect for the pictures having Modal**/
-.imghover img:hover{
-    box-shadow:0 0 30px rgb(150, 75, 23);
+
+.imghover img:hover {
+    box-shadow: 0 0 30px #964b17;
 }
 /** Changin the size of the footer**/
-footer
-{
-    text-align:center;
-    font-size:1em;
-    max-width:100%;
+
+footer {
+    text-align: center;
+    font-size: 1em;
+    max-width: 100%;
 }
 /** changing the color and aligning the font awesome icon present in the contact**/
-.contact > a > .fa
-{
+
+.contact > a > .fa {
     color: #7d3017;
     padding-left: 30px;
 }
 /** Nav bar default and hover effect**/
-.navbar-default{
+
+.navbar-default {
     background-color: #592314;
-    border-color:#151414;
+    border-color: #151414;
 }
 .navbar-default .navbar-nav>li>a:hover {
-    background-color:#a94442;
-    color: #fff ;
+    background-color: #a94442;
+    color: #fff;
 }
-.navbar-default .navbar-nav>li>a{
-    color:#f8d9a9;
-    font-family:cursive;
+.navbar-default .navbar-nav>li>a {
+    color: #f8d9a9;
+    font-family: cursive;
 }
 /** Selected Nav menu being highlighted**/
-.selected {
-    background-color:#a94442;
-    color: #fff ;
-}
 
+.selected {
+    background-color: #a94442;
+    color: #fff;
+}
 /** Media Queries**/
 /** Max-width:990px and min-width: 734px**/
-@media (max-width:990px) and (min-width:734px){
-    .profiledetails{
-        display:flex;
-    }
-    .context{
-        font-size:80%;
-    }
-    .textfont h1,h2,h3,h4{
-        font-size:20px;
-    }
-    .profilepic img{
-        width:50%;
-        height:50%;
-    }
-    .profilepic{
-        padding-right:35%;
-    }
-    .imghover{
-        display:flex;
-    }
 
+@media (max-width: 990px) and (min-width: 734px) {
+    .profiledetails {
+        display: flex;
+    }
+    .context {
+        font-size: 80%;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 20px;
+    }
+    .profilepic img {
+        width: 50%;
+        height: 50%;
+    }
+    .profilepic {
+        padding-right: 35%;
+    }
+    .imghover {
+        display: flex;
+    }
 }
 /** Max-width:733px and min-width: 601px**/
-@media (max-width:733px) and (min-width:601px){
-    .profiledetails{
-        display:flex;
-    }
-    .context{
-        font-size:95%;
-    }
-    .textfont h1,h2,h3,h4{
-        font-size:18px;
-    }
-    .profilepic img{
-        width:60%;
-        height:60%;
-    }
-    .profilepic{
-        padding-right:23%;
-    }
-     .imghover{
-        display:flex;
-    }
 
+@media (max-width: 733px) and (min-width: 601px) {
+    .profiledetails {
+        display: flex;
+    }
+    .context {
+        font-size: 95%;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 18px;
+    }
+    .profilepic img {
+        width: 60%;
+        height: 60%;
+    }
+    .profilepic {
+        padding-right: 23%;
+    }
+    .imghover {
+        display: flex;
+    }
 }
 /** Max-width:600px and min-width: 450px**/
-@media (max-width:600px) and (min-width:450px){
-     .profiledetails{
-        display:flex;
-    }
-    .context{
-        font-size:70%;
-    }
-    .textfont h1,h2,h3,h4{
-        font-size:20px;
-    }
-    .profilepic img{
-        width:40%;
-        height:40%;
-    }
-    .modal{
-        height:100%;
-    }
 
+@media (max-width: 600px) and (min-width: 450px) {
+    .profiledetails {
+        display: flex;
+    }
+    .context {
+        font-size: 70%;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 20px;
+    }
+    .profilepic img {
+        width: 40%;
+        height: 40%;
+    }
 }
 /** Max-width:449px**/
-@media (max-width:449px) {
 
-    .context{
-        font-size:70%;
+@media (max-width: 449px) {
+    .context {
+        font-size: 70%;
     }
-    .textfont h1,h2,h3,h4{
-        font-size:20px;
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 20px;
     }
-    .profilepic img{
-        width:40%;
-        height:40%;
+    .profilepic img {
+        width: 40%;
+        height: 40%;
     }
-    .modal{
-        height:100%;
-    }
-    .profiledetails h1,h4{
+    .profiledetails h1,
+    h4 {
         text-align: left;
     }
-
 }
 /** Modal styles **/
-.modal{
+
+.modal {
+    height: 100%;
     max-width: 100%;
 }
-.modal-body>img{
+.modal-body>img {
     display: block;
     margin: 0 auto;
 }
-.modal-body>ul{
+.modal-body>ul {
     font-size: 25px;
 }
