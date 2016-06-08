@@ -1,123 +1,135 @@
+/** CSS details for body**/
 body{
 
     background-image:url("../images_src/backgrnd.png");
     max-width:100%;
 }
-.textfont {
+/** font for all the headings and modal context present in the page**/
+.textfont h1,h2,h3,h4,.modal{
      font-family: 'Cookie', cursive;
      color:#bd7635;  
      font-size:25px;
 }
+/** style for the horitonal line**/
 hr{
      border: 2px solid #A86830;
 }
-.logo img{   
+/** Shadow effect for profile picture**/
+.profilepic img{   
      width:30%;
      height:30%;
      border-radius: 100px;
      box-shadow:0 0 30px rgb(150, 75, 23);  
 }
+/** aligning and altering the syle for the context present in the page**/
 .context{
+    font-family: 'Cookie', cursive;
     color:#463231;
+    text-align: justify;
+    display:none;
     font-size:30px;
 }
+/** Shawdow effect for all the pictures**/
 .imgshadow img{
      border-radius: 30px/10px;
      box-shadow:0px 1px 2px 3px rgb(150, 75, 23);
      padding:10px;
 }
+/** Hover effect for the pictures having Modal**/
 .imghover img:hover{
     box-shadow:0 0 30px rgb(150, 75, 23);  
 }
+/** Changin the size of the footer**/
 footer
 {
     text-align:center;
-    font-size:0.8em;
+    font-size:1em;
     max-width:100%;
 }
+/** changing the color and aligning the font awesome icon present in the contact**/
 .contact > a > .fa 
 {
     color: #7d3017;
     padding-left: 30px;
 }
+/** Nav bar default and hover effect**/
 .navbar-default{
     background-color: #592314;
     border-color:#151414;
 }
-#output{
-    color:white;
-    align-content: center;
-    display:block;
+.navbar-default .navbar-nav>li>a:hover { 
+    background-color:#a94442;
+    color: #fff ; 
 }
 .navbar-default .navbar-nav>li>a{
     color:#f8d9a9;
     font-family:cursive;
 }
-.navbar-default .navbar-nav>li>a:hover { 
+/** Selected Nav menu being highlighted**/
+.selected { 
     background-color:#a94442;
-    color: #fff !important; 
+    color: #fff ; 
 }
+
 /** Media Queries**/
 /** Max-width:990px and min-width: 734px**/
 @media (max-width:990px) and (min-width:734px){
-    .headlogo{
+    .profiledetails{
         display:flex;
     }
     .context{
-        font-size:30px;
+        font-size:80%;
     }
     .textfont h1,h2,h3,h4{
-        font-size:30px;
+        font-size:20px;
     }
-    .logo img{
+    .profilepic img{
         width:50%;
         height:50%;
     }
-    .logo{
-        padding-right:20%;
+    .profilepic{
+        padding-right:35%;
     }
     .imghover{
         display:flex;
     }
 
 }
-@media (max-width:733px) and (min-width:401px){
-    .headlogo{
+/** Max-width:733px and min-width: 601px**/
+@media (max-width:733px) and (min-width:601px){
+    .profiledetails{
         display:flex;
     }
     .context{
-        font-size:20px;
-    }
-    footer .fa{
-        font-size:1.6em;
+        font-size:95%;
     }
     .textfont h1,h2,h3,h4{
-        font-size:20px;
+        font-size:18px;
     }
-    .logo img{
+    .profilepic img{
         width:60%;
         height:60%;
     }
-    .logo{
-        padding-right:32%;
+    .profilepic{
+        padding-right:23%;
     }
-    .imghover{
+     .imghover{
         display:flex;
     }
 
 }
-@media (max-width:400px){
-
+/** Max-width:600px and min-width: 450px**/
+@media (max-width:600px) and (min-width:450px){
+     .profiledetails{
+        display:flex;
+    }
     .context{
         font-size:70%;
     }
-    footer .fa{
-        font-size:1.8em;
-    }
     .textfont h1,h2,h3,h4{
-        font-size:25px;
+        font-size:20px;
     }
-    .logo img{
+    .profilepic img{
         width:40%;
         height:40%;
     }
@@ -126,7 +138,28 @@ footer
     }
 
 }
-/** Modal **/
+/** Max-width:449px**/
+@media (max-width:449px) {
+
+    .context{
+        font-size:70%;
+    }
+    .textfont h1,h2,h3,h4{
+        font-size:20px;
+    }
+    .profilepic img{
+        width:40%;
+        height:40%;
+    }
+    .modal{
+        height:100%;
+    }
+    .profiledetails h1,h4{
+        text-align: left;
+    }
+
+}
+/** Modal styles **/
 .modal{
     max-width: 100%;
 }
