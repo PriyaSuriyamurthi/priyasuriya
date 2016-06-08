@@ -7,7 +7,7 @@ body{
 /** font for all the headings and modal context present in the page**/
 .textfont h1,h2,h3,h4,.modal{
      font-family: 'Cookie', cursive;
-     color:#bd7635;  
+     color:#bd7635;
      font-size:25px;
 }
 /** style for the horitonal line**/
@@ -15,11 +15,11 @@ hr{
      border: 2px solid #A86830;
 }
 /** Shadow effect for profile picture**/
-.profilepic img{   
+.profilepic img{
      width:30%;
      height:30%;
      border-radius: 100px;
-     box-shadow:0 0 30px rgb(150, 75, 23);  
+     box-shadow:0 0 30px rgb(150, 75, 23);
 }
 /** aligning and altering the syle for the context present in the page**/
 .context{
@@ -37,7 +37,7 @@ hr{
 }
 /** Hover effect for the pictures having Modal**/
 .imghover img:hover{
-    box-shadow:0 0 30px rgb(150, 75, 23);  
+    box-shadow:0 0 30px rgb(150, 75, 23);
 }
 /** Changin the size of the footer**/
 footer
@@ -47,7 +47,7 @@ footer
     max-width:100%;
 }
 /** changing the color and aligning the font awesome icon present in the contact**/
-.contact > a > .fa 
+.contact > a > .fa
 {
     color: #7d3017;
     padding-left: 30px;
@@ -57,18 +57,18 @@ footer
     background-color: #592314;
     border-color:#151414;
 }
-.navbar-default .navbar-nav>li>a:hover { 
+.navbar-default .navbar-nav>li>a:hover {
     background-color:#a94442;
-    color: #fff ; 
+    color: #fff ;
 }
 .navbar-default .navbar-nav>li>a{
     color:#f8d9a9;
     font-family:cursive;
 }
 /** Selected Nav menu being highlighted**/
-.selected { 
+.selected {
     background-color:#a94442;
-    color: #fff ; 
+    color: #fff ;
 }
 
 /** Media Queries**/
@@ -162,6 +162,10 @@ footer
 /** Modal styles **/
 .modal{
     max-width: 100%;
+}
+.modal-body>img{
+    display: block;
+    margin: 0 auto;
 }
 .modal-body>ul{
     font-size: 25px;
