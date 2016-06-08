@@ -13,3 +13,8 @@ Incorporated:
 4. Navbar has been used
 5. HTML and CSS has been validated
 6. Font Icon and Smiley has been used
+
+
+PageSpeed Insights: Checked the web page and found there needs few variation based on render blocking Javascript and css. Also on browser catching. 
+
+
