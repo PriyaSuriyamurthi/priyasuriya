@@ -1,0 +1,293 @@
+/** set the max-width of the images **/
+body img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Gudea", sans-serif;
+    text-align: justify;
+}
+
+/** set the carousel values **/
+.carousel {
+    height: 500px;
+    background-color: #777;
+    margin-bottom: 30px;
+}
+
+.carousel-caption {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+
+.carousel-control {
+    height: 100%;
+    margin-top: 0px;
+    border-radius: 0;
+    border: 0;
+}
+
+
+#awards-text a {
+    color: #fff2a8;
+}
+
+#awards-text {
+    padding-bottom: 8%;
+}
+
+.project-entry img {
+    width: 50%;
+}
+
+
+#demo-link {
+    color: #e06409;
+    padding-right: 10px;
+    text-decoration: blink;
+    font-size: 20px;
+}
+
+.main-text {
+    z-index: 1;
+    position: absolute;
+}
+
+.header-featured {
+    font-family: "IM Fell English", serif;
+    font-size: 31px;
+}
+
+.main-text,
+.header-text {
+    color: #fff;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.main-text img {
+    border-radius: 100px;
+    box-shadow: -2px 2px 24px -2px white;
+}
+
+#workExperience, 
+#education {
+    font-size: 25px;
+    padding-left: 40%;
+}
+
+#workProjects {
+    text-align: justify;
+    font-size: 25px;
+    padding-right: 5%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#experience,
+#educations {
+    background-color: #f3f3f3;
+}
+
+#skill-text {
+    list-style-type: none;
+}
+
+/** set the flex box values **/
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#experience, 
+  #projects,
+  #educations {
+    padding-left: 8%;
+}
+
+.contact-icon {
+    padding-bottom: 10%;
+}
+
+.fa {
+    padding-left: 30px;
+}
+
+#contact-phone {
+    color: #4285f4;
+}
+
+#contact-github {
+    color: #34a853;
+}
+
+#contact-linked {
+    color: #fbbc05;
+}
+
+#contact-email {
+    color: #ea4335;
+}
+
+#map {
+    display: block;
+    height: 100%;
+    margin: 0 5%;
+}
+
+#mapDiv {
+    height: 400px;
+    width: 100%;
+}
+
+/** Media Query **/
+@media (max-width: 1000px) and (min-width: 800px) {
+
+.profile-text,
+.header-text
+.main-container {
+        font-size: 10px;
+    }
+
+    .carousel-caption {
+        font-size: 15px;
+    }
+
+    .text-content {
+        font-size: 15px;
+    }
+
+    .contact-icon .fa {
+        font-size: 4em;
+        padding-bottom: 15%;
+    }
+
+    .skills-chart-holder,
+.education-chart-holder {
+        width: 50%;
+    }
+
+    #experience, 
+  #projects,
+  #educations {
+        padding-left: 20%;
+    }
+
+    #workExperience, 
+  #workProjects,
+  #education {
+        font-size: 28px;
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 799px) and ( min-width: 501px) {
+
+    .profile-text h2,
+ h3,
+ h4 {
+        font-size: 20px;
+    }
+
+    .carousel-caption {
+        font-size: 15px;
+    }
+
+    .carousel-caption
+  h1, 
+  h2 {
+        font-size: 36px;
+    }
+
+    .contact-icon .fa {
+        font-size: 3em;
+        padding-bottom: 20%;
+    }
+
+    #awards-text {
+        padding-bottom: 20%;
+    }
+
+    .skills-chart-holder,
+.education-chart-holder {
+        width: 100%;
+    }
+
+    #experience, 
+  #projects,
+  #educations {
+        padding-left: 10%;
+    }
+
+    #workExperience, 
+  #workProjects,
+  #education {
+        font-size: 18px;
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 500px) and ( min-width: 320px) {
+
+    .profile-text h2,
+ h3,
+ h4 {
+        font-size: 20px;
+    }
+
+    .carousel-caption {
+        font-size: 12px;
+    }
+
+    .carousel-caption
+  h1, 
+  h2 {
+        font-size: 30px;
+    }
+
+    .contact-icon .fa {
+        font-size: 3em;
+        padding-bottom: 30%;
+        padding-left: 10px;
+    }
+
+    #awards-text {
+        padding-bottom: 40%;
+    }
+
+    .skills-chart-holder,
+.education-chart-holder {
+        width: 100%;
+    }
+
+    #experience, 
+  #projects,
+  #educations {
+        padding-left: 5%;
+    }
+
+    #workExperience, 
+  #workProjects,
+  #education {
+        font-size: 18px;
+        padding-left: 0px;
+    }
+
+    .education-entry em {
+        font-size: 0.7 em;
+    }
+
+    #mapDiv {
+        height: 200px;
+        width: 90%;
+    }
+}

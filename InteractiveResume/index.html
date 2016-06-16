@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Priya Suriyamurthi</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Gudea" rel="stylesheet" type="text/css">
+    <script src="js/Chart.js"></script>
+
+</head>
+
+<body>
+    <!-- Header Container -->
+    <div class="header-container">
+
+        <div class="container main-text">
+            <div class="row">
+                <div class="col-xs-4">
+                    <img class="img-responsive profile-pic" src="#" alt="profile pic">
+                </div>
+                <div class="col-xs-8 profile-text">
+                </div>
+            </div>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="container carousel-cap">
+                        <div class="carousel-caption">
+                            <article>
+                                <h1 class="header-featured">About Me</h1>
+                                <p id="welcome-text"></p>
+                                <h2 class="header-featured">Skills at Glance </h2>
+                                <ul id="skill-text" class="flex-box"></ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="carousel-caption ">
+                            <section class="contact-icon">
+                                <h1 class="header-featured">Contact </h1>
+                                <a href="tel:" id="contact-phone">
+                                    <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
+                                </a>
+                                <a href="" id="contact-github" target="_blank">
+                                    <i class="fa fa-github-square fa-4x" aria-hidden="true"></i>
+                                </a>
+                                <a href="" id="contact-linked" target="_blank">
+                                    <i class="fa fa-linkedin-square fa-4x"></i>
+                                </a>
+                                <a href="mailto:" id="contact-email">
+                                    <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+                                </a>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <article>
+                                <h1 class="header-featured">Honours and Awards</h1>
+                                <div id="awards-text"></div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+    <!-- Main Container -->
+    <div class="main-container">
+        <div class="container-fluid">
+            <div class="row" id="experience">
+                <div class="col-md-3 skills-chart-holder">
+                    <header>
+                        <h2 class="header-featured">     
+                   Skills 
+                   </h2>
+                    </header>
+                    <canvas id="skills-chart" width="300" height="300"> </canvas>
+                </div>
+                <div class="col-md-9">
+                    <div id="workExperience">
+                        <article>
+                            <header>
+                                <h2 class="header-featured"> 
+                              Work Experience
+                            </h2>
+                            </header>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <hr class="featured-divider">
+            <div class="row" id="projects">
+                <div class="col-xs-12 ">
+                    <div id="workProjects">
+                        <article>
+                            <header>
+                                <h2 class="header-featured"> 
+                        Projects
+                        </h2>
+                            </header>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <hr class="featured-divider">
+            <div class="row" id="educations">
+                <div class="col-md-5 education-chart-holder">
+                    <header>
+                        <h2 class="header-featured">     
+                   Education Line chart
+                   </h2>
+                    </header>
+                    <canvas id="education-chart"></canvas>
+                </div>
+                <div class="col-md-7">
+                    <div id="education">
+                        <article>
+                            <header>
+                                <h2 class="header-featured"> 
+                        Education
+                        </h2>
+                            </header>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <hr class="featured-divider">
+            <div class="row" id="mapDetails">
+                <div class="col-xs-12">
+                    <article>
+                        <h2 class="header-featured"> 
+                        Where I've Lived and Worked
+                         </h2>
+                        <div id="mapDiv">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Container -->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-entry">
+                <hr>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+</body>
+
+</html>
