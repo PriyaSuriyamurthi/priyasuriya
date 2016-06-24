@@ -106,7 +106,8 @@ footer {
     h1,
     h2,
     h3,
-    h4 {
+    h4,
+    p {
         font-size: 20px;
     }
     .profilepic img {
@@ -132,7 +133,8 @@ footer {
     h1,
     h2,
     h3,
-    h4 {
+    h4,
+    p {
         font-size: 18px;
     }
     .profilepic img {
@@ -158,7 +160,8 @@ footer {
     h1,
     h2,
     h3,
-    h4 {
+    h4,
+    p {
         font-size: 20px;
     }
     .profilepic img {
@@ -175,7 +178,8 @@ footer {
     h1,
     h2,
     h3,
-    h4 {
+    h4,
+    p {
         font-size: 20px;
     }
     .profilepic img {
@@ -183,7 +187,9 @@ footer {
         height: 40%;
     }
     .profiledetails h1,
-    h4 {
+    h4,
+    p
+    {
         text-align: left;
     }
 }
