@@ -11,9 +11,9 @@ var homeX = [0, 100, 200, 300, 400];
 var keyX = [0, 100, 200, 300, 400];
 var keyY = [160, 320];
 var itemX = [0, 100, 200, 300, 400];
-var itemY = [110, 280];
+var itemY = [100, 270];
 var uniqueY = selectY;
-var threshold = 30;
+var threshold = 40;
 var score = {
     calc: [{
         "level": "initial",
@@ -72,7 +72,7 @@ Enemy.prototype.update = function(dt) {
         this.x = this.x + (dt * 180 * Math.random());
     } else {
         for (var i = 2; i <= level.currentLevel; i++) {
-            this.x = this.x + (dt * 90 * i / 2 * Math.random());
+            this.x = this.x + (dt * 90 * i * Math.random());
         }
     }
     if (this.x > 400) {
