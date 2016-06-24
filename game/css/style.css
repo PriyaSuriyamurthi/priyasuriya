@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+}
+
+#message {
+    display: none;
+    font-family: "Cookie", cursive;
+    color: #bd7635;
+    font-size: 25px;
+}
+
+.modal {
+    height: 100%;
+    max-width: 100%;
+}
+
+.modal ul {
+    text-align: start;
+}
+
+#arrowImage,
+#wonImage,
+.modal-footer {
+    margin: 0px auto;
+}
