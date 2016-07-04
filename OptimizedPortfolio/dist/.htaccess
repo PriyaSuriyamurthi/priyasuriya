@@ -851,7 +851,7 @@ FileETag None
 
   # CSS
 
-    ExpiresByType text/css                              "access plus 1O minutes"
+    ExpiresByType text/css                              "access plus 10 minutes"
 
   # Data interchange
 
@@ -881,7 +881,7 @@ FileETag None
 
     ExpiresByType application/javascript                "access plus 1 year"
     ExpiresByType application/x-javascript              "access plus 1 year"
-    ExpiresByType text/javascript                       "access plus 1 year"
+    ExpiresByType text/javascript                       "access plus 10 minutes"
 
 
   # Manifest files
@@ -897,7 +897,7 @@ FileETag None
     ExpiresByType image/bmp                             "access plus 1 month"
     ExpiresByType image/gif                             "access plus 1 month"
     ExpiresByType image/jpeg                            "access plus 1 month"
-    ExpiresByType image/png                             "access plus 1 month"
+    ExpiresByType image/png                             "access plus 10 minutes"
     ExpiresByType image/svg+xml                         "access plus 1 month"
     ExpiresByType image/webp                            "access plus 1 month"
     ExpiresByType video/mp4                             "access plus 1 month"
