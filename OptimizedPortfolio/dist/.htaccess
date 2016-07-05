@@ -853,6 +853,7 @@ FileETag None
 
     ExpiresByType text/css                              "access plus 1 year"
 
+
   # Data interchange
 
     ExpiresByType application/atom+xml                  "access plus 1 hour"
@@ -932,10 +933,6 @@ FileETag None
 
 </IfModule>
 
-<FilesMatch "(?i)^.*\.(ico|flv|jpg|jpeg|png|gif|js|css)$">
-ExpiresActive On
-ExpiresDefault A600
-</FilesMatch>
 # ----------------------------------------------------------------------
 # | File concatenation                                                 |
 # ----------------------------------------------------------------------
