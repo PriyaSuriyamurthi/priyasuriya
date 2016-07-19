@@ -3,7 +3,11 @@ Portfolio
 
 Concept:
 
-	Build the portfolio using HTML,CSS and Bootstrap. 
+	Build the portfolio using HTML,CSS and Bootstrap.
+
+Description:
+
+	The webpage is about me and my interests. Also there are links to my linkedin and github. 
 
 Incorporated:
 
