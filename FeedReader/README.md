@@ -21,4 +21,4 @@ There should be at least one feed data available.
 # Execution: 
 
 1. Open the file index.html to run the application locally
-2. 
+2. http://priyasuriyamurthi.github.io/FeedReader/index.html
