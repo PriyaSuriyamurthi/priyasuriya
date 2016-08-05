@@ -82,13 +82,15 @@ $(function() {
  
         var initialContent, changedContent;
         beforeEach(function(done) {
+            loadFeed(0, function() {
             initialContent = $('.feed').html();
             loadFeed(1, done);
+            });
         });
         /*Stored the content from the current load and also after new load.
         compare the results to see if they are different. This will prove
         that the feed load is different */
-        it('are loaded', function(done) {            
+        it('are not same as the old feed', function(done) {            
             changedContent = $('.feed').html();
             expect(initialContent).not.toBe(changedContent);
             done();
